@@ -145,6 +145,12 @@ def generate_html_report(x_result, search_results, output_path):
     x_ss = make_relative(x_result.get("Screenshot"))
     x_text_escaped = x_result.get("Text", "").replace("\n", "<br>")
 
+    x_screenshot_html = ""
+    if x_result.get("Screenshot"):
+        x_screenshot_html = f"<div class='x-screenshot-container' onclick='openModal(\"{x_ss}\")'><img src='{x_ss}' alt='X Post Screenshot'></div>"
+    else:
+        x_screenshot_html = "<div class='card-screenshot-failed'>No screenshot captured</div>"
+
     cards_html = ""
     for r in search_results:
         ss_rel = make_relative(r.get("Screenshot"))
@@ -538,7 +544,7 @@ def generate_html_report(x_result, search_results, output_path):
                 </div>
                 <div>
                     <strong>Captured Post Snapshot:</strong>
-                    {"<div class='x-screenshot-container' onclick='openModal(\"" + x_ss + "\")'><img src='" + x_ss + "' alt='X Post Screenshot'></div>" if x_result.get("Screenshot") else "<div class='card-screenshot-failed'>No screenshot captured</div>"}
+                    {x_screenshot_html}
                 </div>
             </div>
         </section>

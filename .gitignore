@@ -7,3 +7,6 @@ venv/
 .env.*
 .git-credentials
 push_to_github.py
+push_to_github_new.py
+trigger_new.py
+push_both.py
