@@ -1,0 +1,9 @@
+__pycache__/
+results/
+*.log
+.DS_Store
+venv/
+.env
+.env.*
+.git-credentials
+push_to_github.py
