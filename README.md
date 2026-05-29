@@ -1,4 +1,4 @@
-# FundedHive Search Automation [![Views](https://profile-counter.glitch.me/fundedhive-search-automation/count.svg)](https://github.com/koushik4475/fundedhive-search-automation)
+# FundedHive Search Automation [![Views](https://komarev.com/ghpvc/?username=Project121-ui&repo=fundedhive-search-automation&color=blue&style=flat-square)](https://github.com/Project121-ui/fundedhive-search-automation)
 
 Automates parallel searches across multiple search engines for "FundedHive 1-minute payout" and correlated indexation verification, with dedicated X/Twitter post parsing.
 
